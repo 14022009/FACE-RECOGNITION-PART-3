@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>FACE RECOGNITION</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Merienda&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <div class="hd">Face Recognition</div>
+    <div class="hd2"></div>
+    <div style="width: 50%; display: inline-block;">
+        <h2 style="padding-left: 20px; width: 72%;">Model is trained to identify the following face:</h2>
+        <div style="background-color: rgba(255, 255, 255, 0.1); height: 22%; width: 72%;">
+            <h3 style="padding-left: 20px;text-decoration: underline; text-align: center; line-height: 50px;"><a
+                    href="https://en.wikipedia.org/wiki/Father" style="color: white;">Father</a>
+                <br>
+                YourSelf <br> <a href="https://en.wikipedia.org/wiki/Mother" style="color: white;">Mother </a> </h3>
+        </div>
+        <br>
+        <br>
+        <button id="tak_pic_btn" onclick="take_pic()">Take Picture</button>
+        <button id="reco_pic_btn" onclick="reco_pic()">Recongnize</button>
+        <br>
+        <h2 style="margin-left: 1%;">Person: <span id="pers_name_dis" class="sp"></span></h2>
+        <h2 style="margin-left: 1%;">Accuracy: <span id="pers_acc_dis" class="sp"></span></h2>
+    </div>
+
+    <div style="display: inline-block;">
+        <h3 style="text-align: left; position:absolute; top: 20%;">WebCam View</h3>
+    </div>
+    <center>
+        <div id="webcam_dis"></div>
+        <h3 style="position: absolute; left: 50%;">Your Snap will appear here</h3>
+        <div id="webcam_dis_s"></div>
+    </center>
+    <br>
+    <br>
+    <script src="main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,80 @@
+body {
+    background-color: coral;
+    font-family: Merienda;
+    color: white;
+}
+
+.hd {
+    width: 100%;
+    background-color: rgb(15, 15, 15);
+    height: 14%;
+    font-size: 340%;
+    line-height: 90px;
+    text-align: left;
+    padding-left: 20px;
+}
+
+.hd2 {
+    display: block;
+    height: 40px;
+}
+
+#webcam_dis {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    padding-right: 20px;
+    border: 10px solid white;
+    border-radius: 20px;
+    width: 520px !important;
+    height: 396px !important;
+}
+
+#webcam_dis_s {
+    position: absolute;
+    top: 95%;
+    left: 50%;
+}
+
+#tak_pic_btn {
+    margin-left: 1%;
+    background-color: rgb(30, 101, 168);
+    border: 0px;
+    border-radius: 5px;
+    width: 35%;
+    font-size: 200%;
+    transition: width 0.1s;
+}
+
+#tak_pic_btn:hover {
+    width: 40%;
+}
+
+#reco_pic_btn {
+    background-color: rgb(34, 179, 58);
+    border: 0px;
+    border-radius: 5px;
+    width: 35%;
+    font-size: 200%;
+    transition: width 0.1s;
+}
+
+#reco_pic_btn:hover {
+    width: 40%;
+}
+
+
+.sp {
+    color: rgb(252, 220, 43);
+}
+
+#webcamera{
+    border: 10px double rgb(255, 255, 255);
+    border-radius: 8px;
+}
+
+a:hover{
+    color: gold;
+    text-decoration: underline double gold;
+    font-size: 30px;
+}
